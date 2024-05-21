@@ -23,7 +23,7 @@ Abrir navegador
 
 Fechar navegador
     Sleep    500ms    # pode ser necessário para dar tempo
-                      # de realizar a última ação/validação
+                    # de realizar a última ação/validação
     Close Browser
 
 Clicar no Carrinho
@@ -39,16 +39,15 @@ Realizar Logout
     
 
 
-Obter Data e hora
- # Ler a data e hora do Sistema Operacional
+Obter Data e Hora
+# Ler a data e hora do Sistema Operacional
     ${date} =    Get Current Date
-    ${date} =    Convert Date    {date}    result_format=%Y.%m.%d_%H.%M.%S
+    ${date} =    Convert Date    ${date}    result_format=%Y.%m.%d_%H.%M.%S
+    ${date}    Set Global Variable    ${date}
 Tirar Screenshot    
-    #[Arguments]    ${screenshot_name}
+    [Arguments]    ${screenshot_name}
     # Ler a data e hora do Sistema Operacional
-    ${date} =    Get Current Date
-    ${date} =    Convert Date    {date}    result_format=%Y.%m.%d_%H.%M.%S
-    Capture Page Screenshot    screenshots/${TEST_NAME}/${date}.jpg
+    Capture Page Screenshot    screenshots/${date}/${TEST_NAME}/${screenshot_name}.jpg
 
     #1 - screenshots/<system_name>/<test_name>/<date>.jpg
     #2 - screenshots/<system_name>/<date>/<test_name>.jpg

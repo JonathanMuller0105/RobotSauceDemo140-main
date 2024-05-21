@@ -58,7 +58,7 @@ E pressiono a tecla Enter
     Press Key    css=[data-test="password"]    ENTER
 
 Entao sou direcionado para a pagina de produtos
- #   Wait Until Element Is Visible    css=.title    ${timeout}
+#   Wait Until Element Is Visible    css=.title    ${timeout}
  #   Element Text Should Be    css=.title    css=.title
     Wait Until Element Contains    css=.title    css=.title    ${timeout}
 
