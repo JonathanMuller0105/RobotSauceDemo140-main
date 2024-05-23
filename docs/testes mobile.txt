@@ -1,0 +1,46 @@
+Testes Mobile
+
+O que são aplicações Mobile?
+- App Aplicativos para smartphone ( Android e IOS)
+- Tablets
+- Smartvs
+- Sistemas embarcos em veiculos ( GPS / AV)
+- Sistemas embarcadas em eletrodomésticos
+- Smartwatches
+
+
+Tipos de Desemvolvimento / Aplicativos Mobile
+- Web App: Falso Aplicativo - Site formatado como se fosse um App
+- Nativo: Feito sobre medida para o Android ou IOS
+- Hibrido: Um time trabalha em um projeto e o mapeamento 
+
+O tempo de automação para testes mobile acaba sendo 30 a 50% maior
+O que demora é a configuração inicial e o mapeamento.
+
+Os testes automatizados podem ser realizados:
+- Localmente:
+-----> Conectar o celular no computador via cabo USB
+       (Ativar o modo desenvolvedor / Autorizar)
+-----> Emulador 
+- Remoto:
+-----> Aparelhos Fisicos  
+-----> Emulador 
+
+
+Computador ou Notbook Ideal 
+- Equivalente a um processador i5 ou superior, 10ª geração ou superior 
+- Memoria RAM: 16 GB ou mais 
+- HD: SSD 500 GB
+
+Configuração Inicial 
+- Cenario do teste Remoto
+01 - Escolher um formecedor e criar uma conta (www.saucelabs.com)
+02 - Download e Upload de um Apk Info (www.apkpure.com)
+03 - Upload do aplicativo que vamos testar (mda)
+04 - Selecionar um emulador ou aparelho, e subir os 02 apps
+05 - Vamos usar o APK info para descobrir:
+---> appPackage: com.saucelabs.mydemoapp.android
+---> appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+06 -  Baixar e instalar no computador o Appium Inspector
+07 - Criar e executar um perfil de teste no Appium Inspector
+08 - Inspecionar o app - descobrir os elementos.
